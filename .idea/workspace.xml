@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730623436225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec">
+      <option name="closed" value="true" />
+      <created>1730629025263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730629025263</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,24 +119,25 @@
     <MESSAGE value="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)" />
     <MESSAGE value="bug when input has extra ( in middle" />
     <MESSAGE value="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end" />
+    <MESSAGE value="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

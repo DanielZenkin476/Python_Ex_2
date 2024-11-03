@@ -1,5 +1,6 @@
 from bisect import bisect_right
 from distutils.command.check import check
+from inspect import stack
 
 
 class Solution(object):
@@ -121,10 +122,29 @@ class Solution(object):
         return max_len
 
 
+    def longestValidParentheses_3(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        max_len =0
+        char_lst = [-1]
+        for i in range(len(s)):
+            if s[i]== '(':
+                char_lst.append(i)
+            else:
+                char_lst.pop()
+                if not char_lst:
+                    char_lst.append(i)
+                else:
+                    max_len = max(max_len,i-char_lst[-1])
+        return max_len
+
+
 
 
 
 
 
 sol = Solution()
-print(sol.longestValidParentheses_2(')('))
+print(sol.longestValidParentheses_3('()(())'))
