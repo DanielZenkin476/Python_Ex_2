@@ -53,6 +53,36 @@ class Solution(object):
         nums[i],nums[j] = nums[j],nums[i]
         nums[i+1:] = reversed(nums[i+1:])
 
+    def longestValidParentheses(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if s == "": return 0
+        s_lst = []
+        curr = 0
+        max_len = 0
+        id = 0
+        flag = False
+        n = len(s)
+        while(id<n):
+            char = s[id]
+            if char == '(':
+                if not s_lst:
+                    flag = True# lst was not empty
+                s_lst.append(char)
+            elif char ==')':
+                if s_lst and  s_lst.pop() == '(':
+                    curr+=2
+                    max_len = max(max_len, curr)
+                else: #invalid
+                    curr= 0
+                    s_lst = []
+            id+=1
+        return max_len
+
+
+
 
 sol = Solution()
-print(sol.mySqrt_2(16))
+print(sol.longestValidParentheses('()(()'))
