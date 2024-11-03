@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Python_leetcode_ex_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +72,27 @@
       <option name="presentableId" value="Default" />
       <updated>1730617642311</updated>
     </task>
+    <task id="LOCAL-00001" summary="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))">
+      <option name="closed" value="true" />
+      <created>1730619922290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730619922290</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))" />
+    <option name="LAST_COMMIT_MESSAGE" value="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>19</line>
+          <line>18</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
