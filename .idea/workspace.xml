@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="bug when input has extra ( in middle">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,13 +87,22 @@
       <option name="project" value="LOCAL" />
       <updated>1730620929123</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bug when input has extra ( in middle">
+      <option name="closed" value="true" />
+      <created>1730622988325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730622988325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))" />
     <MESSAGE value="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)" />
-    <option name="LAST_COMMIT_MESSAGE" value="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)" />
+    <MESSAGE value="bug when input has extra ( in middle" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug when input has extra ( in middle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -103,6 +111,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>18</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

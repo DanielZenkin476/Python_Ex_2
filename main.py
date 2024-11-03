@@ -65,24 +65,30 @@ class Solution(object):
         id = 0
         flag = False
         n = len(s)
+        save_curr = 0
         while(id<n):
             char = s[id]
             if char == '(':
                 if not s_lst:
                     flag = True# lst was not empty
+                    sav_curr = curr
+                    curr = 0
                 s_lst.append(char)
             elif char ==')':
                 if s_lst and  s_lst.pop() == '(':
                     curr+=2
                     max_len = max(max_len, curr)
                 else: #invalid
+                    flag = False
                     curr= 0
                     s_lst = []
             id+=1
+        if flag and not s_lst:
+            return max_len+sav_curr
         return max_len
 
 
 
 
 sol = Solution()
-print(sol.longestValidParentheses('()(()'))
+print(sol.longestValidParentheses(')()())'))
