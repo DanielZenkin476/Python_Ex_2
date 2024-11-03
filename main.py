@@ -1,4 +1,5 @@
 from bisect import bisect_right
+from distutils.command.check import check
 
 
 class Solution(object):
@@ -65,7 +66,7 @@ class Solution(object):
         id = 0
         flag = False
         n = len(s)
-        save_curr = 0
+        sav_curr = 0
         while(id<n):
             char = s[id]
             if char == '(':
@@ -77,7 +78,9 @@ class Solution(object):
             elif char ==')':
                 if s_lst and  s_lst.pop() == '(':
                     curr+=2
-                    max_len = max(max_len, curr)
+                    if not s_lst:
+                        max_len = max(max_len, curr+sav_curr)
+                    else : max_len = max(max_len, curr)
                 else: #invalid
                     flag = False
                     curr= 0
@@ -87,8 +90,41 @@ class Solution(object):
             return max_len+sav_curr
         return max_len
 
+    def longestValidParentheses_2(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        max_len = 0
+
+        left, right = 0, 0
+        for i in range(len(s)):# go from left to right
+            if s[i] == '(':
+                left += 1
+            else:
+                right += 1
+            if left == right:# substring valid
+                max_len = max(max_len, left * 2)
+            elif right > left:# invalid case
+                left = right = 0
+
+        left, right = 0, 0
+        for i in range(len(s) - 1, -1, -1):# go from right to left
+            if s[i] == '(':
+                left += 1
+            else:
+                right += 1
+            if left == right:# substring valid
+                max_len = max(max_len, left * 2)
+            elif left > right:# invalid case
+                left = right = 0
+        return max_len
+
+
+
+
 
 
 
 sol = Solution()
-print(sol.longestValidParentheses(')()())'))
+print(sol.longestValidParentheses_2(')('))
