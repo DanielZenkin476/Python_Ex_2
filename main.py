@@ -121,7 +121,6 @@ class Solution(object):
                 left = right = 0
         return max_len
 
-
     def longestValidParentheses_3(self, s):
         """
         :type s: str
