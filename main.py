@@ -187,6 +187,13 @@ class Solution(object):
                 right = mid-1
         return [-1,-1]
 
+    def myPow(self, x, n):
+        """
+        :type x: float
+        :type n: int
+        :rtype: float
+        """
+
 
 
 

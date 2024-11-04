@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730710058116</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11">
+      <option name="closed" value="true" />
+      <created>1730710731628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730710731628</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,16 +163,12 @@
     <MESSAGE value="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb" />
     <MESSAGE value="done with search, runtime 0msec, memory 11.67, beats 94%" />
     <MESSAGE value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
-    <option name="LAST_COMMIT_MESSAGE" value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
+    <MESSAGE value="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>70</line>
@@ -179,6 +183,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>150</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
