@@ -169,6 +169,23 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        n=len(nums)
+        left = 0
+        right = n- 1
+        while (left <= right):
+            mid = (left + right) // 2
+            if nums[mid] == target:
+                s = end = mid
+                while(s>0 and nums[s-1]==target):
+                    s-=1
+                while (end<n-1 and nums[end+1] == target):
+                    end += 1
+                return [s,end]
+            if nums[mid]< target:
+                left = mid+1
+            else:
+                right = mid-1
+        return [-1,-1]
 
 
 
@@ -178,4 +195,4 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.search(nums = [4,5,6,7,0,1,2], target = 6))
+print(sol.searchRange(nums = [1], target = 1))

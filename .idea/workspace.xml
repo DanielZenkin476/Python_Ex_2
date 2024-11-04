@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="done with search, runtime 0msec, memory 11.67, beats 94%" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730709957396</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
+      <option name="closed" value="true" />
+      <created>1730710058116</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730710058116</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,7 +154,8 @@
     <MESSAGE value="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec" />
     <MESSAGE value="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb" />
     <MESSAGE value="done with search, runtime 0msec, memory 11.67, beats 94%" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with search, runtime 0msec, memory 11.67, beats 94%" />
+    <MESSAGE value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
+    <option name="LAST_COMMIT_MESSAGE" value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
