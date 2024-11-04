@@ -193,6 +193,19 @@ class Solution(object):
         :type n: int
         :rtype: float
         """
+        res = 1.0
+        if n>0:
+            res = 1.0
+            while(n>0):
+                res*=x
+                n-=1
+        else:
+            n=-n
+            res = 1.0
+            while(n>0):
+                res= res/x
+                n-=1
+        return res
 
 
 
