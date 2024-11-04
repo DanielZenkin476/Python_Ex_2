@@ -212,8 +212,6 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        for row in matrix:
-            print(row)
         n = len(matrix)
         if n ==1: return matrix
         check = [[False for a in range(n)] for b in range(n)]
@@ -233,9 +231,6 @@ class Solution(object):
                 else: pass
                 y+=1
             x+=1
-        for row in matrix:
-            print(row)
-        print(check)
 
     def switch_image(self,matrix,a,b,c,d):
         temp = matrix[a][b]
