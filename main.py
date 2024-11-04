@@ -212,16 +212,29 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        n = len(matrix)
-        for x in range(n):
-            for y in range (n):
-                if x ==y == (n-1)/2:
-                    pass # odd num of column,center piece possible
-                else:
-
-                    matrix[x][y] = matrix[y][n-1-x]
+        n = len(matrix)-1
+        x=y=0
         for row in matrix:
             print(row)
+        while(x<=n/2and y<=n/2):
+            self.switch_image(matrix,x,y,y,n-x)
+            self.switch_image(matrix, x, y, n-y, n - x)
+            self.switch_image(matrix, x, y, n-y, x)
+            x+=1
+            y+=1
+
+        for row in matrix:
+            print (row)
+
+    def switch_image(self,matrix,a,b,c,d):
+        temp = matrix[a][b]
+        matrix[a][b] =matrix[c][d]
+        matrix[c][d] = temp
+
+
+
+
+
 
 
 
