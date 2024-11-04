@@ -207,6 +207,25 @@ class Solution(object):
                 n-=1
         return res
 
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: None Do not return anything, modify matrix in-place instead.
+        """
+        n = len(matrix)
+        for x in range(n):
+            for y in range (n):
+                if x ==y == (n-1)/2:
+                    pass # odd num of column,center piece possible
+                else:
+
+                    matrix[x][y] = matrix[y][n-1-x]
+        for row in matrix:
+            print(row)
+
+
+
+
 
 
 
@@ -215,4 +234,4 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.searchRange(nums = [1], target = 1))
+print(sol.rotate(matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]))
