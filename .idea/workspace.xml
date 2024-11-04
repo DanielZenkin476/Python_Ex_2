@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="works, but runtime on extreme cases not good enough (x = 0.00001 , n = 214783647">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="switches corner in each row , need to think on rest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -27,7 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -168,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730711577677</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="not working properly, need to redo">
+      <option name="closed" value="true" />
+      <created>1730721066078</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730721066078</updated>
+    </task>
+    <task id="LOCAL-00014" summary="switches corner in each row , need to think on rest">
+      <option name="closed" value="true" />
+      <created>1730722853526</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1730722853526</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,7 +199,9 @@
     <MESSAGE value="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11" />
     <MESSAGE value="50.pow(x,n),Implement pow(x, n), which calculates x raised to the power n (i.e., xn)." />
     <MESSAGE value="works, but runtime on extreme cases not good enough (x = 0.00001 , n = 214783647" />
-    <option name="LAST_COMMIT_MESSAGE" value="works, but runtime on extreme cases not good enough (x = 0.00001 , n = 214783647" />
+    <MESSAGE value="not working properly, need to redo" />
+    <MESSAGE value="switches corner in each row , need to think on rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="switches corner in each row , need to think on rest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -207,6 +225,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>174</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>225</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

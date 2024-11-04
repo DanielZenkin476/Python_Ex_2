@@ -212,19 +212,30 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
-        n = len(matrix)-1
-        x=y=0
         for row in matrix:
             print(row)
-        while(x<=n/2and y<=n/2):
-            self.switch_image(matrix,x,y,y,n-x)
-            self.switch_image(matrix, x, y, n-y, n - x)
-            self.switch_image(matrix, x, y, n-y, x)
+        n = len(matrix)
+        if n ==1: return matrix
+        check = [[False for a in range(n)] for b in range(n)]
+        x = 0
+        y = 0
+        while(x<n/2):
+            y=0
+            while(y< n/2):
+                if check[x][y]== False:
+                    check[x][y]= True
+                    check[y][n-1-x]= True
+                    check[n-1-y][n-1-x]=True
+                    check[n-1-y][x] = True
+                    self.switch_image(matrix,x,y,y,n-1-x)
+                    self.switch_image(matrix,x,y,n-1-x,n-1-y)
+                    self.switch_image(matrix,x,y,n-1-y,x)
+                else: pass
+                y+=1
             x+=1
-            y+=1
-
         for row in matrix:
-            print (row)
+            print(row)
+        print(check)
 
     def switch_image(self,matrix,a,b,c,d):
         temp = matrix[a][b]
@@ -247,4 +258,4 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.rotate(matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]))
+print(sol.rotate(matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]))
