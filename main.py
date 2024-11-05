@@ -237,6 +237,11 @@ class Solution(object):
         matrix[a][b] =matrix[c][d]
         matrix[c][d] = temp
 
+    def deleteDuplicates(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
 
 
 
@@ -247,6 +252,13 @@ class Solution(object):
 
 
 
+
+
+#Definition for singly-linked list.
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 

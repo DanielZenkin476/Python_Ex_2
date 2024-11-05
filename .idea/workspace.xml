@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="working proper on 4x4 and 3x3, should be it" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="for some reason not working in leetcode but works here -\_/-\_/-">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python_leetcode_ex_2" />
@@ -205,7 +208,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730734524030</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="for some reason not working in leetcode but works here -\_/-\_/">
+      <option name="closed" value="true" />
+      <created>1730734944949</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1730734944949</updated>
+    </task>
+    <task id="LOCAL-00019" summary="for some reason not working in leetcode but works here -\_/-\_/-">
+      <option name="closed" value="true" />
+      <created>1730734958571</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730734958571</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,7 +244,9 @@
     <MESSAGE value="working proper on 4x4" />
     <MESSAGE value="working proper on 4x4 and 3x3, should be it. using switch_image def to switch data" />
     <MESSAGE value="working proper on 4x4 and 3x3, should be it" />
-    <option name="LAST_COMMIT_MESSAGE" value="working proper on 4x4 and 3x3, should be it" />
+    <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/" />
+    <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/-" />
+    <option name="LAST_COMMIT_MESSAGE" value="for some reason not working in leetcode but works here -\_/-\_/-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,7 +273,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>225</line>
+          <line>223</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
