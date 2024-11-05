@@ -1,6 +1,7 @@
 from bisect import bisect_right
 from distutils.command.check import check
 from inspect import stack
+from itertools import filterfalse
 
 
 class Solution(object):
@@ -302,6 +303,42 @@ class Solution(object):
         for col in col_z:
             for i in range(n):
                 matrix[i][col]=0
+
+    def searchMatrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        n = len(matrix)
+        if n == 0:
+            return False
+        m = len(matrix[0])
+        if m == 0:
+            return False
+        if target < matrix[0][0] or target>matrix[n-1][m-1]:
+            return False
+        start = 0
+        end = n-1
+        while (start <= end):
+            row = (start + end) // 2
+            if matrix[row][0]<=target<= matrix[row][m-1]: break
+            elif target> matrix[row][m-1]:
+                start = row + 1
+            else:
+                end = row-1
+        start = 0
+        end = m-1
+        while(start<=end):
+            mid = (start+end)//2
+            if matrix[row][mid] == target: return True
+            elif matrix[row][mid] > target:
+                end = mid-1
+            else:
+                start = mid+1
+        return False
+
+
 
 
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place.">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -279,11 +279,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730811790610</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec">
+      <option name="closed" value="true" />
+      <created>1730812332786</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1730812332786</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))" />
     <MESSAGE value="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)" />
     <MESSAGE value="bug when input has extra ( in middle" />
     <MESSAGE value="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end" />
@@ -308,34 +315,35 @@
     <MESSAGE value="trying with recursion - c(n) = c(n-1) = c(n-2)" />
     <MESSAGE value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
     <MESSAGE value="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place." />
-    <option name="LAST_COMMIT_MESSAGE" value="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place." />
+    <MESSAGE value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
+    <option name="LAST_COMMIT_MESSAGE" value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>70</line>
+          <line>71</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>98</line>
+          <line>99</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>150</line>
+          <line>151</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>174</line>
+          <line>175</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>223</line>
+          <line>224</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
