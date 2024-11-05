@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="for some reason not working in leetcode but works here -\_/-\_/-">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730734958571</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.">
+      <option name="closed" value="true" />
+      <created>1730809830809</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730809830809</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,7 +253,8 @@
     <MESSAGE value="working proper on 4x4 and 3x3, should be it" />
     <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/" />
     <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/-" />
-    <option name="LAST_COMMIT_MESSAGE" value="for some reason not working in leetcode but works here -\_/-\_/-" />
+    <MESSAGE value="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

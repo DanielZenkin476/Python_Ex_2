@@ -242,6 +242,21 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        if not head:
+            return head
+        node = head
+        next_node = node.next
+        if not next_node:
+            return node
+        while(next_node!= None):
+            if node.val == next_node.val:
+                node.next = next_node.next
+                next_node =node.next
+                if not next_node: break
+            else:
+                node = next_node
+                next_node = node.next
+        return head
 
 
 
