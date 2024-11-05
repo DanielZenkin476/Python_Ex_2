@@ -262,6 +262,22 @@ class Solution(object):
         elif n==2 : return 2
         else: return self.climbStairs(n-1)+self.climbStairs(n-2)
 
+    def climbStairs_2(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n ==0: return 0
+        if n ==1 : return 1
+        if n==2: return 2
+        a =1
+        b = 2
+        for i in range(3,n+1):
+            temp = b
+            b = a+b
+            a = temp
+        return b
+
 
 
 
@@ -289,4 +305,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.rotate(matrix = [[1,2,3],[4,5,6],[7,8,9]]))
+print(sol.climbStairs_2(34))
