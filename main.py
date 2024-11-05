@@ -283,6 +283,26 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
+        n = len(matrix)
+        if n ==0 :
+            return
+        m = len(matrix[0])
+        if m ==0:
+            return
+        rows_z =set()
+        col_z =set()
+        for i in range(n):
+            for j in range(m):
+                if matrix[i][j] == 0:
+                    rows_z.add(i)
+                    col_z.add(j)
+        for row in rows_z:
+            for j in range(m):
+                matrix[row][j]=0
+        for col in col_z:
+            for i in range(n):
+                matrix[i][col]=0
+
 
 
 
