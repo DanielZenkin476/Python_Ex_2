@@ -345,8 +345,8 @@ class Solution(object):
         """
         res = [[]]
         for item in nums:
-            for lst in res:
-                res.append(lst+[item])
+            for i in range(len(res)):
+                res.append(res[i]+[item])
         return res
 
 
