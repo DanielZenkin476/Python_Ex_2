@@ -346,9 +346,7 @@ class Solution(object):
         res = [[]]
         for item in nums:
             for lst in res:
-                new_lst = list(lst)
-                new_lst.append(item)
-                res.append(new_lst)
+                res.append(lst+[item])
         return res
 
 
@@ -380,4 +378,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.climbStairs_2(34))
+print(sol.subsets([1,2,3]))
