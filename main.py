@@ -245,17 +245,11 @@ class Solution(object):
         if not head:
             return head
         node = head
-        next_node = node.next
-        if not next_node:
-            return node
-        while(next_node!= None):
-            if node.val == next_node.val:
-                node.next = next_node.next
-                next_node =node.next
-                if not next_node: break
+        while node and node.next:
+            if node.val == node.next.val:
+                node.next = node.next.next
             else:
-                node = next_node
-                next_node = node.next
+                node = node.next
         return head
 
 
