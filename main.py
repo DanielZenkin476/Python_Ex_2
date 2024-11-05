@@ -338,6 +338,18 @@ class Solution(object):
                 start = mid+1
         return False
 
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = [[]]
+        for item in nums:
+            for lst in res:
+                new_lst = list(lst)
+                new_lst.append(item)
+                res.append(new_lst)
+        return res
 
 
 

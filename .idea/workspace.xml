@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -287,12 +287,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730812332786</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="using 2 binary searches - one for row num and one for the value itself">
+      <option name="closed" value="true" />
+      <created>1730812876043</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730812876043</updated>
+    </task>
+    <task id="LOCAL-00029" summary="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec">
+      <option name="closed" value="true" />
+      <created>1730812899019</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730812899019</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)" />
-    <MESSAGE value="bug when input has extra ( in middle" />
     <MESSAGE value="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end" />
     <MESSAGE value="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec" />
     <MESSAGE value="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb" />
@@ -316,7 +330,9 @@
     <MESSAGE value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
     <MESSAGE value="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place." />
     <MESSAGE value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
-    <option name="LAST_COMMIT_MESSAGE" value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
+    <MESSAGE value="using 2 binary searches - one for row num and one for the value itself" />
+    <MESSAGE value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
+    <option name="LAST_COMMIT_MESSAGE" value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
