@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="working properly, runtime 0msec">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python_leetcode_ex_2" />
@@ -303,13 +304,34 @@
       <option name="project" value="LOCAL" />
       <updated>1730812899019</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="working but memory limit Exceeded">
+      <option name="closed" value="true" />
+      <created>1730813247264</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730813247264</updated>
+    </task>
+    <task id="LOCAL-00031" summary="working but memory limit Exceeded foes into endless loop">
+      <option name="closed" value="true" />
+      <created>1730813373333</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730813373333</updated>
+    </task>
+    <task id="LOCAL-00032" summary="working properly, runtime 0msec">
+      <option name="closed" value="true" />
+      <created>1730813468227</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730813468227</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end" />
-    <MESSAGE value="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec" />
-    <MESSAGE value="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb" />
     <MESSAGE value="done with search, runtime 0msec, memory 11.67, beats 94%" />
     <MESSAGE value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
     <MESSAGE value="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11" />
@@ -332,7 +354,10 @@
     <MESSAGE value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
     <MESSAGE value="using 2 binary searches - one for row num and one for the value itself" />
     <MESSAGE value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
-    <option name="LAST_COMMIT_MESSAGE" value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
+    <MESSAGE value="working but memory limit Exceeded" />
+    <MESSAGE value="working but memory limit Exceeded foes into endless loop" />
+    <MESSAGE value="working properly, runtime 0msec" />
+    <option name="LAST_COMMIT_MESSAGE" value="working properly, runtime 0msec" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,6 +386,16 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>224</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>359</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>369</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

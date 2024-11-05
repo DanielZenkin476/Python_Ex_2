@@ -349,6 +349,45 @@ class Solution(object):
                 res.append(res[i]+[item])
         return res
 
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None Do not return anything, modify nums1 in-place instead.
+        """
+        if n==0:
+            return
+        if m==0:
+            for i in range(n):
+                nums1[i]=nums2[i]
+            return
+        nums1=nums1[m:]+nums1[:m]
+        i = n
+        j= 0
+        id = 0
+        while(i<m+n and j<n):
+            if nums1[i]<nums2[j]:
+                nums1[id] = nums1[i]
+                i+=1
+            else:
+                nums1[id] = nums2[j]
+                j += 1
+            id+=1
+        while(i<m+n):
+            nums1[id] = nums1[i]
+            i += 1
+            id += 1
+        while (j<n):
+            nums1[id] = nums2[j]
+            j += 1
+            id += 1
+
+
+
+
+
 
 
 
@@ -378,4 +417,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.subsets([1,2,3]))
+print(sol.merge(nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3))
