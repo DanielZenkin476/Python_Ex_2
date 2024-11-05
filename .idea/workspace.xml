@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="trying with recursion - c(n) = c(n-1) = c(n-2)">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730811063607</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)">
+      <option name="closed" value="true" />
+      <created>1730811491880</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730811491880</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +298,8 @@
     <MESSAGE value="runtime improved - from 9msec to 0, removed node.next as a var, direct check" />
     <MESSAGE value="70. climbing stairs- You are climbing a staircase. It takes n steps to reach the top.&#10;&#10;Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?" />
     <MESSAGE value="trying with recursion - c(n) = c(n-1) = c(n-2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying with recursion - c(n) = c(n-1) = c(n-2)" />
+    <MESSAGE value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
+    <option name="LAST_COMMIT_MESSAGE" value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
