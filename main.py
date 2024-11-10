@@ -476,6 +476,28 @@ class Solution(object):
             res+=str(curr_count)+curr_num
         return res
 
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        for num in candidates:
+            print(self.rec_sum(candidates,target,res = []))
+
+    def rec_sum(self,candidates,target,res):
+        if target < 0:
+            return -1
+        else:
+            for num in candidates:
+                if num ==target:
+                    return res+[num]
+                elif num<target:
+                    new_res= self.rec_sum(candidates,target-num,res+[num])
+                    if type(new_res)== list:
+                        return new_res
+        return -1
+
 
 
 
@@ -492,4 +514,4 @@ class ListNode(object):
 sol = Solution()
 
 
-print(sol.countAndSay(6))
+print(sol.combinationSum(candidates = [2,3,6,7], target = 7))
