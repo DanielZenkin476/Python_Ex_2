@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="working, runtime 11msec, memoty 11.67mB">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="removed the double showcase in res bug, (sorted list and check if in results, still not showing all possible outcomes">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -392,14 +391,42 @@
       <option name="project" value="LOCAL" />
       <updated>1731241473842</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="39.Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.&#10;&#10;The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the&#10;frequency&#10;of at least one of the chosen numbers is different.&#10;&#10;The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.">
+      <option name="closed" value="true" />
+      <created>1731243072079</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1731243072079</updated>
+    </task>
+    <task id="LOCAL-00042" summary="currently finds the first one only">
+      <option name="closed" value="true" />
+      <created>1731243104792</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1731243104792</updated>
+    </task>
+    <task id="LOCAL-00043" summary="half works, can show the same list twice">
+      <option name="closed" value="true" />
+      <created>1731243408303</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1731243408303</updated>
+    </task>
+    <task id="LOCAL-00044" summary="removed the double showcase in res bug, (sorted list and check if in results, still not showing all possible outcomes">
+      <option name="closed" value="true" />
+      <created>1731243511120</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1731243511120</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working proper on 4x4" />
-    <MESSAGE value="working proper on 4x4 and 3x3, should be it. using switch_image def to switch data" />
-    <MESSAGE value="working proper on 4x4 and 3x3, should be it" />
-    <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/" />
     <MESSAGE value="for some reason not working in leetcode but works here -\_/-\_/-" />
     <MESSAGE value="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well." />
     <MESSAGE value="working, can improve runtime" />
@@ -421,7 +448,11 @@
     <MESSAGE value="insted of using func to ala square using nested for loops, works better, runtime 3msec(beats 90), memory 11.47( beats 97" />
     <MESSAGE value="not working, need to redo later" />
     <MESSAGE value="working, runtime 11msec, memoty 11.67mB" />
-    <option name="LAST_COMMIT_MESSAGE" value="working, runtime 11msec, memoty 11.67mB" />
+    <MESSAGE value="39.Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.&#10;&#10;The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the&#10;frequency&#10;of at least one of the chosen numbers is different.&#10;&#10;The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input." />
+    <MESSAGE value="currently finds the first one only" />
+    <MESSAGE value="half works, can show the same list twice" />
+    <MESSAGE value="removed the double showcase in res bug, (sorted list and check if in results, still not showing all possible outcomes" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the double showcase in res bug, (sorted list and check if in results, still not showing all possible outcomes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -468,13 +499,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>484</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>488</line>
-          <option name="timeStamp" value="34" />
+          <line>497</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

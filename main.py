@@ -482,30 +482,24 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        poss_res = []
-        for num in candidates:
-            sol = self.rec_sum(candidates,target-num,res = [])
-            if type(sol) == list:
-                sol = sorted([num]+sol)
-                if sol not in poss_res: poss_res.append(sol)
-        print(poss_res)
+        poss_res =[]
+        self.rec_sum(candidates,target,res = [],final_res=poss_res)
         return poss_res
 
 
-    def rec_sum(self,candidates,target,res):
+    def rec_sum(self,candidates,target,res,final_res):
         if target== 0:
-            return res
+            return
         if target < 0:
-            return -1
+            return
         else:
             for num in candidates:
                 if num ==target:
-                    return res+[num]
+                    sol = sorted([num] + res)
+                    if sol not in final_res: final_res.append(sol)
                 elif num<target:
-                    new_res= self.rec_sum(candidates,target-num,res+[num])
-                    if type(new_res)== list:
-                        return new_res
-        return -1
+                    self.rec_sum(candidates,target-num,res+[num],final_res)
+        return
 
 
 
