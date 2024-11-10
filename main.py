@@ -487,7 +487,6 @@ class Solution(object):
         self.rec_sum(candidates,target,res = [],final_res=poss_res)
         return poss_res
 
-
     def rec_sum(self,candidates,target,res,final_res):
         if target== 0:
             return
@@ -518,8 +517,52 @@ class Solution(object):
                     self.rec_sum(candidates,target-candidates[i],res+[candidates[i]],final_res)
         return
 
+    def inorderTraversal(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: List[int]
+        """
+        pre_order = []
+        self.preorder_rec(root,pre_order)
+        in_order = []
+        self.inorder_rec(root,in_order)
+        post_order = []
+        self.postoder_rec(root,post_order)
+
+        return in_order
+
+    def inorder_rec(self,node,lst):
+        if node is None:
+            return
+        else:
+            self.inorder_rec(node.left, lst)
+            lst.append(node.val)
+            self.inorder_rec(node.right, lst)
+
+    def postoder_rec(self,node,lst):
+        if node is None:
+            return
+        else:
+            self.inorder_rec(node.left, lst)
+            self.inorder_rec(node.right, lst)
+            lst.append(node.val)
+
+    def preorder_rec(self,node,lst):
+        if node is None:
+            return
+        else:
+            lst.append(node.val)
+            self.inorder_rec(node.left, lst)
+            self.inorder_rec(node.right, lst)
 
 
+
+
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 #Definition for singly-linked list.
 class ListNode(object):

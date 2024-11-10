@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="changed how rec function works, no for loop in base function, rec function no longer returns a value, but modifies final_res list.&#10;working, but runtime 251msec- not great, working on presumprion that list is not sorted, can do sort and limit the searches">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="new recursive function - for soted candidates, runtime is 183msec- better but can do more">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -431,11 +432,18 @@
       <option name="project" value="LOCAL" />
       <updated>1731243978485</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="new recursive function - for soted candidates, runtime is 183msec- better but can do more">
+      <option name="closed" value="true" />
+      <created>1731244235525</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1731244235525</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="83.   Remove Duplicates from Sorted List&#10;Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well." />
     <MESSAGE value="working, can improve runtime" />
     <MESSAGE value="runtime improved - from 9msec to 0, removed node.next as a var, direct check" />
     <MESSAGE value="70. climbing stairs- You are climbing a staircase. It takes n steps to reach the top.&#10;&#10;Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?" />
@@ -460,7 +468,8 @@
     <MESSAGE value="half works, can show the same list twice" />
     <MESSAGE value="removed the double showcase in res bug, (sorted list and check if in results, still not showing all possible outcomes" />
     <MESSAGE value="changed how rec function works, no for loop in base function, rec function no longer returns a value, but modifies final_res list.&#10;working, but runtime 251msec- not great, working on presumprion that list is not sorted, can do sort and limit the searches" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed how rec function works, no for loop in base function, rec function no longer returns a value, but modifies final_res list.&#10;working, but runtime 251msec- not great, working on presumprion that list is not sorted, can do sort and limit the searches" />
+    <MESSAGE value="new recursive function - for soted candidates, runtime is 183msec- better but can do more" />
+    <option name="LAST_COMMIT_MESSAGE" value="new recursive function - for soted candidates, runtime is 183msec- better but can do more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,7 +516,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>498</line>
+          <line>497</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
