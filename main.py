@@ -412,7 +412,6 @@ class Solution(object):
 
         return True
 
-
     def check_sq(self, board,startx,starty):
         """
         :type board: List[List[str]]
@@ -427,6 +426,37 @@ class Solution(object):
                     else:
                         bool_arr[int(board[i][j])-1] = True
         return True
+
+    def isValidSudoku_2(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        rows,cols = len(board),len(board[0])
+        for r in range(rows):
+            r_map = set()
+            for c in range(cols):
+                if board[r][c] in r_map and board[r][c]!= ".":
+                    return False
+                r_map.add(board[r][c])
+
+        for c in range(cols):
+            c_map = set()
+            for r in range(rows):
+                if board[r][c] in c_map and board[r][c]!= ".":
+                    return False
+                c_map.add(board[r][c])
+
+        for i in range(0,9,3):
+            for j in range(0,9,3):
+                s_map = set()
+                for r in range(3):
+                    for c in range(3):
+                        if board[i+r][j+c] in s_map and board[i+r][j+c] != ".":
+                            return False
+                        s_map.add(board[i+r][j+c])
+        return True
+
 
 
 
