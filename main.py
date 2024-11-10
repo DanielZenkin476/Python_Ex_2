@@ -483,7 +483,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         for num in candidates:
-            print(self.rec_sum(candidates,target,res = []))
+            print(self.rec_sum(candidates,target-num,res = []))
 
     def rec_sum(self,candidates,target,res):
         if target < 0:
