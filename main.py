@@ -555,6 +555,20 @@ class Solution(object):
             self.inorder_rec(node.left, lst)
             self.inorder_rec(node.right, lst)
 
+    def isSameTree(self, p, q):
+        """
+        :type p: Optional[TreeNode]
+        :type q: Optional[TreeNode]
+        :rtype: bool
+        """
+        if q is None and p is None:
+            return True
+        elif q is None or p is None:
+            return False
+        else:
+            if q.val != p.val: return False
+            else:
+                return self.isSameTree(q.left,p.left) and self.isSameTree(q.right,p.right)
 
 
 
@@ -564,7 +578,7 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
-#Definition for singly-linked list.
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -573,8 +587,5 @@ class ListNode(object):
 
 
 
-
 sol = Solution()
-
-
 print(sol.combinationSum(candidates = [1,2,3,6,7], target = 7))
