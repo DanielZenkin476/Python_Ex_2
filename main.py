@@ -570,6 +570,17 @@ class Solution(object):
             else:
                 return self.isSameTree(q.left,p.left) and self.isSameTree(q.right,p.right)
 
+    def isSymmetric(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: bool
+        """
+        left = root.left
+        right = root.right
+        def symmetry(r,l):
+
+
+
 
 
 class TreeNode(object):
