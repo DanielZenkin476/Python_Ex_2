@@ -391,17 +391,44 @@ class Solution(object):
         """
         n = 9
         for i in range(n):# goes over rows
-            bool_arr = [False for a in range(n)]
+            bool_arr = [False for a in range(9)]
             for j in range(n):
-                if bool_arr[board[i][j]]: return False
-                else:
-                    bool_arr[board[i][j]]=True
+                if board[i][j]!= '.':
+                    if bool_arr[int(board[i][j])-1]:
+                        return False
+                    else:
+                        bool_arr[int(board[i][j])-1] = True
         for i in range(n):# goes over col
             bool_arr = [False for a in range(n)]
             for j in range(n):
-                if bool_arr[board[j][i]]: return False
-                else:
-                    bool_arr[board[j][i]]=True
+                if board[j][i]!= '.':
+                    if bool_arr[int(board[j][i])-1]:
+                        return False
+                    else:
+                        bool_arr[int(board[j][i])-1] = True
+        for x in [0,3,6]:
+            for y in [0,3,6]:
+                if not self.check_sq(board,x,y): return False
+
+        return True
+
+
+    def check_sq(self, board,startx,starty):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        bool_arr = [False for a in range(9)]
+        for i in range(startx,startx+3):
+            for j in range(starty,starty+3):
+                if board[i][j] != '.':
+                    if bool_arr[int(board[i][j])-1]:
+                        return False
+                    else:
+                        bool_arr[int(board[i][j])-1] = True
+        return True
+
+
 
 
 
@@ -445,8 +472,8 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.isValidSudoku(board =
-[["5","3",".",".","7",".",".",".","."]
+print(sol.isValidSudoku( board =
+[["8","3",".",".","7",".",".",".","."]
 ,["6",".",".","1","9","5",".",".","."]
 ,[".","9","8",".",".",".",".","6","."]
 ,["8",".",".",".","6",".",".",".","3"]

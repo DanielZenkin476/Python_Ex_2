@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="for some reason on leetcode for test case nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3), in site gives wrong answer, but in pycharm works perfectly" />
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="created checks for row and col, need to do for square too(will try with helepr function)">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,13 +24,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python_leetcode_ex_2" />
@@ -333,12 +335,34 @@
       <option name="project" value="LOCAL" />
       <updated>1730816516947</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="36.Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:&#10;&#10;    Each row must contain the digits 1-9 without repetition.&#10;    Each column must contain the digits 1-9 without repetition.&#10;    Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.&#10;&#10;Note:&#10;&#10;    A Sudoku board (partially filled) could be valid but is not necessarily solvable.&#10;    Only the filled cells need to be validated according to the mentioned rules.">
+      <option name="closed" value="true" />
+      <created>1731237146645</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1731237146645</updated>
+    </task>
+    <task id="LOCAL-00035" summary="36.Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:&#10;&#10;    Each row must contain the digits 1-9 without repetition.&#10;    Each column must contain the digits 1-9 without repetition.&#10;    Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.&#10;&#10;Note:&#10;&#10;    A Sudoku board (partially filled) could be valid but is not necessarily solvable.&#10;    Only the filled cells need to be validated according to the mentioned rules.">
+      <option name="closed" value="true" />
+      <created>1731237191268</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731237191268</updated>
+    </task>
+    <task id="LOCAL-00036" summary="created checks for row and col, need to do for square too(will try with helepr function)">
+      <option name="closed" value="true" />
+      <created>1731238056317</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731238056317</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="34.Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#10;&#10;If target is not found in the array, return [-1, -1].&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
-    <MESSAGE value="used binary search to find target, then using s and end to find first and last reoccurring indexes of target. runtime 0msec, memory 12.09 beats 86.11" />
     <MESSAGE value="50.pow(x,n),Implement pow(x, n), which calculates x raised to the power n (i.e., xn)." />
     <MESSAGE value="works, but runtime on extreme cases not good enough (x = 0.00001 , n = 214783647" />
     <MESSAGE value="not working properly, need to redo" />
@@ -362,7 +386,9 @@
     <MESSAGE value="working but memory limit Exceeded foes into endless loop" />
     <MESSAGE value="working properly, runtime 0msec" />
     <MESSAGE value="for some reason on leetcode for test case nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3), in site gives wrong answer, but in pycharm works perfectly" />
-    <option name="LAST_COMMIT_MESSAGE" value="for some reason on leetcode for test case nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3), in site gives wrong answer, but in pycharm works perfectly" />
+    <MESSAGE value="36.Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:&#10;&#10;    Each row must contain the digits 1-9 without repetition.&#10;    Each column must contain the digits 1-9 without repetition.&#10;    Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.&#10;&#10;Note:&#10;&#10;    A Sudoku board (partially filled) could be valid but is not necessarily solvable.&#10;    Only the filled cells need to be validated according to the mentioned rules." />
+    <MESSAGE value="created checks for row and col, need to do for square too(will try with helepr function)" />
+    <option name="LAST_COMMIT_MESSAGE" value="created checks for row and col, need to do for square too(will try with helepr function)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,6 +427,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>369</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>392</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
