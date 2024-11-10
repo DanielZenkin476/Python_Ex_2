@@ -389,6 +389,27 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: bool
         """
+        n = 9
+        for i in range(n):# goes over rows
+            bool_arr = [False for a in range(n)]
+            for j in range(n):
+                if bool_arr[board[i][j]]: return False
+                else:
+                    bool_arr[board[i][j]]=True
+        for i in range(n):# goes over col
+            bool_arr = [False for a in range(n)]
+            for j in range(n):
+                if bool_arr[board[j][i]]: return False
+                else:
+                    bool_arr[board[j][i]]=True
+
+
+
+
+
+
+
+
 
 
 
