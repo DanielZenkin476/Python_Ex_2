@@ -578,6 +578,15 @@ class Solution(object):
         left = root.left
         right = root.right
         def symmetry(r,l):
+            if r is None and l is None:
+                return True
+            elif l is None or r is None:
+                return False
+            else:
+                if l.val!= r.val: return False
+                return symmetry(r.right,l.left) and symmetry(r.left,l.right)
+        return symmetry(right,left)
+
 
 
 
