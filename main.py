@@ -587,6 +587,12 @@ class Solution(object):
                 return symmetry(r.right,l.left) and symmetry(r.left,l.right)
         return symmetry(right,left)
 
+    def maxDepth(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: int
+        """
+
 
 
 

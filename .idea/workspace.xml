@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="done, runtime 0msec (complexity is O(n)">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730617642311</updated>
-    </task>
-    <task id="LOCAL-00001" summary="cont. of leetcode exercises, &#10;69.sqrt(x) - implement sqr without pow() ir **.&#10;made 2 implementations, one with biscut right(not working on site, works in pycharm ) and a more straightforward search using binary search principles. run time is 0msec, space used is 11.54 MB. runtime complexity is O(log(x))">
-      <option name="closed" value="true" />
-      <created>1730619922290</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1730619922290</updated>
     </task>
     <task id="LOCAL-00002" summary="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)">
       <option name="closed" value="true" />
@@ -455,12 +447,26 @@
       <option name="project" value="LOCAL" />
       <updated>1731252728408</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="101.Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).">
+      <option name="closed" value="true" />
+      <created>1731252925891</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1731252925891</updated>
+    </task>
+    <task id="LOCAL-00050" summary="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35">
+      <option name="closed" value="true" />
+      <created>1731253164967</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1731253164968</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="70. climbing stairs- You are climbing a staircase. It takes n steps to reach the top.&#10;&#10;Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?" />
-    <MESSAGE value="trying with recursion - c(n) = c(n-1) = c(n-2)" />
     <MESSAGE value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
     <MESSAGE value="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place." />
     <MESSAGE value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
@@ -484,7 +490,9 @@
     <MESSAGE value="new recursive function - for soted candidates, runtime is 183msec- better but can do more" />
     <MESSAGE value="added pre and post order traversal in function, returns inorder only" />
     <MESSAGE value="done, runtime 0msec (complexity is O(n)" />
-    <option name="LAST_COMMIT_MESSAGE" value="done, runtime 0msec (complexity is O(n)" />
+    <MESSAGE value="101.Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center)." />
+    <MESSAGE value="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35" />
+    <option name="LAST_COMMIT_MESSAGE" value="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
