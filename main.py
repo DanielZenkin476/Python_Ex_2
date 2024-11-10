@@ -486,7 +486,8 @@ class Solution(object):
         for num in candidates:
             sol = self.rec_sum(candidates,target-num,res = [])
             if type(sol) == list:
-                poss_res.append([num]+sol)
+                sol = sorted([num]+sol)
+                if sol not in poss_res: poss_res.append(sol)
         print(poss_res)
         return poss_res
 
@@ -522,4 +523,4 @@ class ListNode(object):
 sol = Solution()
 
 
-print(sol.combinationSum(candidates = [2,3,6,1,7], target = 7))
+print(sol.combinationSum(candidates = [1,2,3,6,7], target = 7))
