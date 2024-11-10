@@ -482,10 +482,18 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
+        poss_res = []
         for num in candidates:
-            print(self.rec_sum(candidates,target-num,res = []))
+            sol = self.rec_sum(candidates,target-num,res = [])
+            if type(sol) == list:
+                poss_res.append([num]+sol)
+        print(poss_res)
+        return poss_res
+
 
     def rec_sum(self,candidates,target,res):
+        if target== 0:
+            return res
         if target < 0:
             return -1
         else:
@@ -514,4 +522,4 @@ class ListNode(object):
 sol = Solution()
 
 
-print(sol.combinationSum(candidates = [2,3,6,7], target = 7))
+print(sol.combinationSum(candidates = [2,3,6,1,7], target = 7))
