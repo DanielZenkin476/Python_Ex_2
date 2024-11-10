@@ -483,6 +483,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         poss_res =[]
+        candidates = sorted(candidates)
         self.rec_sum(candidates,target,res = [],final_res=poss_res)
         return poss_res
 
@@ -499,6 +500,22 @@ class Solution(object):
                     if sol not in final_res: final_res.append(sol)
                 elif num<target:
                     self.rec_sum(candidates,target-num,res+[num],final_res)
+        return
+
+    def rec_sum_sorted(self,candidates,target,res,final_res):
+        if target== 0:
+            return
+        if target < 0:
+            return
+        else:
+            for i in range(len(candidates)):
+                if candidates[i]> target:
+                    break
+                elif candidates[i] ==target:
+                    sol = sorted([candidates[i]] + res)
+                    if sol not in final_res: final_res.append(sol)
+                else:
+                    self.rec_sum(candidates,target-candidates[i],res+[candidates[i]],final_res)
         return
 
 
