@@ -457,42 +457,24 @@ class Solution(object):
                         s_map.add(board[i+r][j+c])
         return True
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def countAndSay(self, n):
+        """
+        :type n: int
+        :rtype: str
+        """
+        if n ==1:return "1"
+        last_str = self.countAndSay(n-1)
+        res = ""
+        i =0
+        while i <len(last_str):
+            curr_num= last_str[i]
+            curr_count = 1
+            i+=1
+            while( i < len(last_str) and curr_num== last_str[i]):
+                i+=1
+                curr_count+=1
+            res+=str(curr_count)+curr_num
+        return res
 
 
 
@@ -508,4 +490,6 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.solveSudoku( board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]))
+
+
+print(sol.countAndSay(6))

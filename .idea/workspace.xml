@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="insted of using func to ala square using nested for loops, works better, runtime 3msec(beats 90), memory 11.47( beats 97">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="not working, need to redo later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -27,7 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -376,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1731238949854</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="not working, need to redo later">
+      <option name="closed" value="true" />
+      <created>1731240872095</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1731240872095</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="not working properly, need to redo" />
     <MESSAGE value="switches corner in each row , need to think on rest" />
     <MESSAGE value="working proper on 4x4" />
     <MESSAGE value="working proper on 4x4 and 3x3, should be it. using switch_image def to switch data" />
@@ -405,7 +412,8 @@
     <MESSAGE value="created checks for row and col, need to do for square too(will try with helepr function)" />
     <MESSAGE value="using check_sq as helper function,runtime should be O(n^2), working, runtime is 12msec, memory is 11.79" />
     <MESSAGE value="insted of using func to ala square using nested for loops, works better, runtime 3msec(beats 90), memory 11.47( beats 97" />
-    <option name="LAST_COMMIT_MESSAGE" value="insted of using func to ala square using nested for loops, works better, runtime 3msec(beats 90), memory 11.47( beats 97" />
+    <MESSAGE value="not working, need to redo later" />
+    <option name="LAST_COMMIT_MESSAGE" value="not working, need to redo later" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,17 +458,14 @@
           <line>392</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>484</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>467</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
