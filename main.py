@@ -726,19 +726,25 @@ class Solution(object):
         loop_flag = True
         break_flag = True
         node = head
-        while loop_flag and break_flag:
+        new_start = -1
+        while loop_flag or break_flag:
             if node.next is None:
+                l+=1
                 node.next = head
                 loop_flag = False
-                while (l<k):
+                while (l<=k):
                     k-=l
-                l=0
+                new_start = l-k
+                if new_start== 0:
+                    return head
+                l= 0
             else:
                 l += 1
-                if l == k:
+                if l == new_start+1:
                     temp = node.next
                     node.next = None
                     node = temp
+                    break_flag = False
                 else:
                     node = node.next
         return temp
@@ -769,7 +775,7 @@ h =ListNode(1,d)
 
 
 sol = Solution()
-new_h =sol.rotateRight(h,0)
+new_h =sol.rotateRight(h,6)
 while(new_h):
     print(new_h.val)
     new_h=new_h.next
