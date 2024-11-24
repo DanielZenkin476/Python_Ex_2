@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="works on testcases- still leetcode not working( counting each element occurrences,then replacing all nums values with the count amount, takes O(n), not using sort, can do with sort 1 line)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,14 +68,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730617642311</updated>
-    </task>
-    <task id="LOCAL-00007" summary="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb">
-      <option name="closed" value="true" />
-      <created>1730629814528</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1730629814528</updated>
     </task>
     <task id="LOCAL-00008" summary="done with search, runtime 0msec, memory 11.67, beats 94%">
       <option name="closed" value="true" />
@@ -464,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1732453225388</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="works on testcases- still leetcode not working( counting each element occurrences,then replacing all nums values with the count amount, takes O(n), not using sort, can do with sort 1 line)">
+      <option name="closed" value="true" />
+      <created>1732458022036</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1732458022036</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
     <MESSAGE value="working but memory limit Exceeded" />
     <MESSAGE value="working but memory limit Exceeded foes into endless loop" />
     <MESSAGE value="working properly, runtime 0msec" />
@@ -493,7 +489,8 @@
     <MESSAGE value="put the +1 outside max, runtime down to 1ms from 3, nenory 11.4" />
     <MESSAGE value="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution" />
     <MESSAGE value="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)" />
-    <option name="LAST_COMMIT_MESSAGE" value="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)" />
+    <MESSAGE value="works on testcases- still leetcode not working( counting each element occurrences,then replacing all nums values with the count amount, takes O(n), not using sort, can do with sort 1 line)" />
+    <option name="LAST_COMMIT_MESSAGE" value="works on testcases- still leetcode not working( counting each element occurrences,then replacing all nums values with the count amount, takes O(n), not using sort, can do with sort 1 line)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
