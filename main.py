@@ -669,7 +669,7 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        if k>n :
+        if k>n or k ==0 or n ==0 :
             return []
         res = []
         lst = []
@@ -687,6 +687,39 @@ class Solution(object):
                     id-=1
                     n-=1
         return res
+
+    def combine(self, n, k):
+        """
+        :type n: int
+        :type k: int
+        :rtype: List[List[int]]
+        """
+        if k>n or k ==0 or n ==0 :
+            return []
+        res = []
+        lst = []
+        for i in range(1,k+1):
+            lst.append(i)
+        res.append(lst)
+        id = k-1
+        while lst[id]<n and id >=0:
+            lst = list(lst)
+            lst[id]+=1
+            res.append(lst)
+            if lst[id]==n:
+                if id ==0 :break
+                else:
+                    id-=1
+                    n-=1
+        return res
+
+    def rotateRight(self, head, k):
+        """
+        :type head: Optional[ListNode]
+        :type k: int
+        :rtype: Optional[ListNode]
+        """
+
 
 
 
