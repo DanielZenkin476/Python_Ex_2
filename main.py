@@ -646,6 +646,26 @@ class Solution(object):
             if p1 or p2 or p3 or p4: return True
         return False
 
+    def sortColors(self, nums):
+        """
+        :type nums: List[int], of 0 ,1 ,2 only
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        count = [0,0,0] # first for 0, second for 1, third for 2
+        for num in nums:
+            count[num]+=1
+        c_id = 0
+        i = 0
+        for i in range(len(nums)):
+            while(count[c_id]==0):
+                c_id+=1
+            nums[i]= c_id
+            count[c_id]-=1
+        print(nums)
+
+
+
+
 
 
 
@@ -686,4 +706,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"))
+print(sol.sortColors(nums = [2]))

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -71,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730617642311</updated>
-    </task>
-    <task id="LOCAL-00006" summary="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb">
-      <option name="closed" value="true" />
-      <created>1730629328823</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1730629328823</updated>
     </task>
     <task id="LOCAL-00007" summary="3rd try: using a list to keep track of indexes! runtime 8msec, memory 12/11mb">
       <option name="closed" value="true" />
@@ -464,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1732450533851</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)">
+      <option name="closed" value="true" />
+      <created>1732453225388</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1732453225388</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using 2 binary searches - one for row num and one for the value itself" />
     <MESSAGE value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
     <MESSAGE value="working but memory limit Exceeded" />
     <MESSAGE value="working but memory limit Exceeded foes into endless loop" />
@@ -493,7 +492,8 @@
     <MESSAGE value="104.Given the root of a binary tree, return its maximum depth.&#10;&#10;A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node." />
     <MESSAGE value="put the +1 outside max, runtime down to 1ms from 3, nenory 11.4" />
     <MESSAGE value="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution" />
+    <MESSAGE value="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)" />
+    <option name="LAST_COMMIT_MESSAGE" value="using another function seq_check to actually check each cell for seq, works for testcases- leetcode still not working(most likely site problem or bug in firefox)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
