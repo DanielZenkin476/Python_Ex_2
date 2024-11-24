@@ -617,6 +617,44 @@ class Solution(object):
                 nxt +=1
         return n
 
+    def exist(self, board, word):
+        """
+        :type board: List[List[str]]
+        :type word: str
+        :rtype: bool
+        """
+        if not board or not board[0]:
+            return False
+        rows= len(board)
+        cols = len(board[0])
+        for row in range(rows):
+            for col in range(cols):
+                if self.seq_check(board,word,0,row,col,[]): return True
+        return False
+
+    def seq_check(self,board,word,id,r,c,id_list):
+        if r<0 or c<0 or r>= len(board) or c>=len(board[0]) or (r,c)in id_list:
+            return False
+        if id == len(word):
+            return True
+        if board[r][c] == word[id]:
+            id_list.append((r,c))
+            p1 = self.seq_check(board,word,id+1,r-1,c,id_list)
+            p2 = self.seq_check(board,word,id+1,r+1,c,id_list)
+            p3= self.seq_check(board,word,id+1,r,c-1,id_list)
+            p4= self.seq_check(board,word,id+1,r,c+1,id_list)
+            if p1 or p2 or p3 or p4: return True
+        return False
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -648,4 +686,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.removeDuplicates(nums = []))
+print(sol.exist(board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"))
