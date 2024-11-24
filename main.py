@@ -4,6 +4,7 @@ from inspect import stack
 from itertools import filterfalse
 
 
+
 class Solution(object):
     def mySqrt(self, x):
         """
@@ -719,42 +720,31 @@ class Solution(object):
         :type k: int
         :rtype: Optional[ListNode]
         """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if head is None or head.next is None or k ==0:
+            return head
+        l=0
+        loop_flag = True
+        break_flag = True
+        node = head
+        while loop_flag and break_flag:
+            if node.next is None:
+                node.next = head
+                loop_flag = False
+                while (l<k):
+                    k-=l
+                l=0
+            else:
+                l += 1
+                if l == k:
+                    temp = node.next
+                    node.next = None
+                    node = temp
+                else:
+                    node = node.next
+        return temp
 
 
 ### need to check ###
-
-
-
-
-
-
-
-
-
 
 
 class TreeNode(object):
@@ -770,7 +760,16 @@ class ListNode(object):
         self.next = next
 
 
+a =ListNode(5,None)
+b =ListNode(4,a)
+c =ListNode(3,b)
+d =ListNode(2,c)
+h =ListNode(1,d)
+
 
 
 sol = Solution()
-print(sol.combine(4,2))
+new_h =sol.rotateRight(h,0)
+while(new_h):
+    print(new_h.val)
+    new_h=new_h.next
