@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35">
+    <list default="true" id="a6c2c645-d383-4448-af25-3f6d74949338" name="Changes" comment="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +24,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python_leetcode_ex_2" />
@@ -70,30 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730617642311</updated>
-    </task>
-    <task id="LOCAL-00002" summary="works, runtime 2 msec(beats 100) memory 11.65MB(beats 32.79)">
-      <option name="closed" value="true" />
-      <created>1730620929123</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1730620929123</updated>
-    </task>
-    <task id="LOCAL-00003" summary="bug when input has extra ( in middle">
-      <option name="closed" value="true" />
-      <created>1730622988325</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1730622988325</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fixed ( in middle nug, but still need to improve( bug when there is a invalid symbol at the end">
-      <option name="closed" value="true" />
-      <created>1730623436225</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1730623436225</updated>
     </task>
     <task id="LOCAL-00005" summary="2nd try: working, good memory usage(11.92MB beats 91,5) but bad runtime- 31msec">
       <option name="closed" value="true" />
@@ -463,13 +439,34 @@
       <option name="project" value="LOCAL" />
       <updated>1731253164968</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="104.Given the root of a binary tree, return its maximum depth.&#10;&#10;A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.">
+      <option name="closed" value="true" />
+      <created>1731253250800</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1731253250800</updated>
+    </task>
+    <task id="LOCAL-00052" summary="put the +1 outside max, runtime down to 1ms from 3, nenory 11.4">
+      <option name="closed" value="true" />
+      <created>1731253553493</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1731253553493</updated>
+    </task>
+    <task id="LOCAL-00053" summary="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution">
+      <option name="closed" value="true" />
+      <created>1732450456870</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1732450456871</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new version, works faster and uses less space(3 var, using for loop to calc like in the recursion but without calling function again)" />
-    <MESSAGE value="73.Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.&#10;&#10;You must do it in place." />
-    <MESSAGE value="checking first for rows and cols to make into zeros,adding to set to ignore duplicetes then zeroing by row and by col. runtime 0msec" />
     <MESSAGE value="using 2 binary searches - one for row num and one for the value itself" />
     <MESSAGE value="using 2 binary searches - one for row num and one for the value itself. works good, runtime 0msec" />
     <MESSAGE value="working but memory limit Exceeded" />
@@ -492,7 +489,10 @@
     <MESSAGE value="done, runtime 0msec (complexity is O(n)" />
     <MESSAGE value="101.Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center)." />
     <MESSAGE value="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35" />
-    <option name="LAST_COMMIT_MESSAGE" value="using modified post order to check symmetry(checking left child of left sub with right of right and vice versa. runtime 0msec beats 100 memory 11.88mb beats 35" />
+    <MESSAGE value="104.Given the root of a binary tree, return its maximum depth.&#10;&#10;A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node." />
+    <MESSAGE value="put the +1 outside max, runtime down to 1ms from 3, nenory 11.4" />
+    <MESSAGE value="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="works on testcases(manual check in pycharm), not working onsite(leetcode ) - error rendering component(probably site problem, as it seems to happen at random to different people.neet to run on leetcode to check solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -541,6 +541,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>497</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>519</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

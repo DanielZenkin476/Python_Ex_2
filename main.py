@@ -596,6 +596,36 @@ class Solution(object):
             return 0
         return max(self.maxDepth(root.left),self.maxDepth(root.right))+1
 
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        nxt =1
+        curr = 0
+        while nxt<n:
+            if nums[curr]== nums[nxt]:#curr == next
+                nxt+=1# move nxt forward
+                while nxt<n and nums[nxt]== nums[curr]:# next one is atleats third - need to push him back
+                    nums[nxt:n]=nums[nxt+1:n]+[nums[curr]]# move list back and insert curr in the last place (n is also k)
+                    n-=1
+                curr = nxt
+                nxt+=1
+            else:
+                curr = nxt
+                nxt +=1
+        return n
+
+
+
+
+### need to check ###
+
+
+
+
+
 
 
 
@@ -618,4 +648,4 @@ class ListNode(object):
 
 
 sol = Solution()
-print(sol.combinationSum(candidates = [1,2,3,6,7], target = 7))
+print(sol.removeDuplicates(nums = []))
